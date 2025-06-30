@@ -1,4 +1,8 @@
-class No:
+notac = input("Insira a notação polonesa: ")
+for i in expressao:
+    if i == "+" or i  == "-":
+
+class No: 
     def __init__(self, valor):
         self.valor = valor
         self.next = None
@@ -29,29 +33,8 @@ class Pilha:
         if(self.size > 0):
             self.top = self.top.next
             self.size -= 1
-
-    def topo(self):
-        if self.top is not None:
-            return self.top.valor
-        else:
-            return "a pilha está vazia"
-        
-    def tamanho(self):
-        return self.size
-    
-if __name__ == "__main__":
-    pilha = Pilha()
-    print(pilha)
-    pilha.push(No(1))
-    print("O tamanho da pilha: ", pilha.tamanho())
-    print("Elemento topo: ", pilha.topo())
-    pilha.push(No(3))
-    print("O tamanho da pilha: ", pilha.tamanho())
-    print("Elemento topo: ", pilha.topo())
-    pilha.push(No(4))
-    print("O tamanho da pilha: ", pilha.tamanho())
-    print("Elemento topo: ", pilha.topo())
-    pilha.pop()
-    print("O tamanho da pilha: ", pilha.tamanho())
-    print("Elemento topo: ", pilha.topo())
-    print(pilha)
+   
+pilha = Pilha()
+print ("Notação Polonesa: ", notac)
+print ("expressão formada: ", expressao)
+print("Resultado da expressão:", pilha)
