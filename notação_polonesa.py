@@ -1,11 +1,11 @@
 notac = input("Insira a notação polonesa: ")
-for i in expressao:
+
+for i in notac:
     if i == "+" or i  == "-":
 
-class No: 
-    def __init__(self, valor):
-        self.valor = valor
-        self.next = None
+class operação: 
+    def menos_mais(notac, expressao):
+        self.expressao = expressao
 
 class Pilha:
     def __init__(self) -> None:
